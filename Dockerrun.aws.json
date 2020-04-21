@@ -1,0 +1,29 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefintions": [
+    {
+      "name": "client",
+      "image": "shoheihosaka/udemy-complex-client",
+      "hostname": "client",
+      "essential": false
+    },
+    {
+      "name": "server",
+      "image": "shoheihosaka/udemy-complex-server",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "shoheihosaka/udemy-complex-worker",
+      "hostname": "worker",
+      "essential": false
+    },
+    {
+      "name": "nginx",
+      "image": "shoheihosaka/udemy-complex-nginx",
+      "hostname": "nginx",
+      "essential": true
+    }
+  ]
+}
